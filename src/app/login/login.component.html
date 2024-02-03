@@ -1,0 +1,32 @@
+
+<img class="wave" src="../assets/wave.png">
+<div class="container">
+    <div class="img">
+        <img src="../assets/avatartrabajo.svg">
+    </div>
+    <div class="login-content">
+        <form method="POST" id="loginForm">
+            <img src="../assets/avatarlogin.svg">
+    <br>
+               <div class="input-div one">
+                  <div class="i">
+                          <i class="fas fa-user"></i>
+                  </div>
+                  <div class="div">
+                          <input type="email" id="email" name="correo" class="input" placeholder="Usuario">
+                  </div>
+               </div>
+               <div class="input-div pass">
+                  <div class="i"> 
+                       <i class="fas fa-lock"></i>
+                  </div>
+                  <div class="div">
+                       <input type="password" id="password" name="spassword" class="input" placeholder="Contraseña">
+               </div>
+            </div>
+            <br>
+            <input type="submit" class="btn" value="Iniciar Sesion">
+          <p>¿No tienes una cuenta? <a [routerLink]="['/registro']">Registrate</a></p>
+        </form>
+    </div>
+</div>

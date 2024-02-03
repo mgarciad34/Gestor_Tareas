@@ -1,0 +1,56 @@
+<!-- This is your registration component HTML -->
+<img class="wave" src="../assets/wave.png">
+<div class="container">
+    <div class="img">
+        <img src="../assets/avatarregistro.svg">
+    </div>
+    <div class="register-content">
+        <form method="POST" id="registerForm">
+            <img src="../assets/avatarlogin.svg"> <!-- You can replace this with the appropriate registration avatar -->
+            <br>
+            <div class="input-div one">
+                <div class="i">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                    <input type="text" id="nombre" name="nombre" class="input" placeholder="Nombre">
+                </div>
+            </div>
+            <div class="input-div one">
+                <div class="i">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="div">
+                    <input type="text" id="apellido" name="apellido" class="input" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="input-div one">
+                <div class="i">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="div">
+                    <input type="email" id="correo" name="correo" class="input" placeholder="Correo Electrónico">
+                </div>
+            </div>
+            <div class="input-div pass">
+                <div class="i">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="div">
+                    <input type="password" id="contrasena" name="contrasena" class="input" placeholder="Contraseña">
+                </div>
+            </div>
+            <div class="input-div pass">
+                <div class="i">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="div">
+                    <input type="password" id="confirmarContrasena" name="confirmarContrasena" class="input" placeholder="Confirmar Contraseña">
+                </div>
+            </div>
+            <br>
+            <input type="submit" class="btn" value="Registrarse">
+            <p>¿Ya tienes una cuenta? <a [routerLink]="['/login']">Inicia Sesión</a></p>
+        </form>
+    </div>
+</div>
